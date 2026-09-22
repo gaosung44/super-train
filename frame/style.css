@@ -1,0 +1,15 @@
+body{
+    text-align: center;
+}
+#parent{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 90px auto 0px;
+}
+.child{
+    border: 2px solid black;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+}
