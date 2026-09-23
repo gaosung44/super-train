@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="icon" href="image/mini_train.png" type="image/png">
+        <title>おみくじ</title>
+        <style>
+            body{
+                text-align: center;
+            }
+            #start{
+                display: block;
+                margin: 30px auto 10px;
+                padding: 20px 40px;
+                background-color: #fff;
+                border-radius: 20px;
+                cursor: pointer;
+                transition: background-color 0.5s;
+            }
+            #start:hover{
+                background-color: #ff0;
+            }
+            #menu{
+                display: block;
+                margin: 0 auto;
+                border-radius: 10px;
+                background-color: #fff;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="home">Super train</h1>
+        <hr>
+        <h1>おみくじ</h1>
+        <h2 id="message">引くを押してスタート</h2>
+        <button id="start">引く</button>
+        <button id="menu">⇐メニュー</button>
+        <script>
+            const msg = document.getElementById("message");
+            const img = document.getElementById("result");
+            const item = ["大凶","凶","末吉","吉","小吉","中吉","大吉"];
+            let count = 0;
+            function play(){
+                const R = Math.floor(Math.random()*item.length);
+                if (count < 10){
+                    msg.textContent = item[R];
+                    count++;
+                } else {
+                    alert("もう引けません");
+                }
+            }
+            document.getElementById("home").addEventListener("click",()=>{
+                location.href = "../index.html";
+            });
+            document.getElementById("menu").addEventListener("click",()=>{
+                location.href = "../menu.html";
+            });
+            document.getElementById("start").addEventListener("click",()=>{
+                play();
+            });
+        </script>
+    </body>
+</html>

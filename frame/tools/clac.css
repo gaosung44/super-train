@@ -1,0 +1,25 @@
+body{
+    display: flex;
+    justify-content: center; /* 左右中央 */
+    align-items: center;     /* 上下中央 */
+    min-height: 100vh;
+}
+.frame{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    padding: 20px;
+    width: 500px;
+    height: 500px;
+    border: 2px solid #000;
+    background-color: #0ff;
+}
+.child{
+    background-color: #0f0;
+    border: 2px solid #000;
+}
+.child4{
+    grid-column: span 5;
+    background-color: #0f0;
+    border: 2px solid #000;
+}
