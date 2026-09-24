@@ -8,46 +8,46 @@ document.getElementById("GoToHome").addEventListener("click",()=>{
 });
 window.addEventListener("load",()=>{
     createItem(
-        "none",
+        "omikuji.png",
         "tools/omikuji.html",
         "おみくじ",
         "おみくじです"
-    );/*
-    createItem(
-        "none",
-        "none",
-        "電卓",
-        "普通の電卓"
     );
     createItem(
-        "none",
+        "block.png",
         "none",
         "ブロック崩し",
         "ブロック崩しです"
     );
     createItem(
-        "none",
+        "clock.png",
         "none",
         "現在時間",
         "現在時間を秒単位で見れます"
     );
     createItem(
-        "none",
+        "memo.png",
         "none",
         "メモ帳",
         "いろいろ使い方ができます"
     );
     createItem(
-        "none",
+        "onpu.png",
         "none",
         "オシレーター",
         "四種類の波形の音が聞けます"
     );
     createItem(
-        "none",
+        "plus.png",
         "none",
         "算数",
         "四則演算を練習できます"
+    );
+    createItem(
+        "calc.png",
+        "none",
+        "電卓",
+        "少し特殊な電卓"
     );
     createItem(
         "none",
@@ -60,7 +60,7 @@ window.addEventListener("load",()=>{
         "none",
         "フロッピートレイン",
         "障害物を避けよう"
-    );*/
+    );
     menuItem.forEach((obj)=>{
         const create = (element)=>{
             return document.createElement(element);
@@ -71,12 +71,22 @@ window.addEventListener("load",()=>{
             switch (i) {
                 case 0:
                     element = create("img");
-                    element.src=(obj.src==="none")?"image/Test_image.png":obj.src;
+                    if (obj.src === "none"){
+                        element.src = "image/Test_image.png";
+                    } else {
+                        element.src = "image/" + obj.src;
+                    }
                     break;
                 case 1:
                     element = create("div");
                     element.classList.add("side");
                     element.textContent = obj.title;
+                    if (obj.href === "none"){
+                        element.textContent += "（開発中）";
+                    }
+                    if (element.textContent.length >= 11){
+                        element.style.fontSize = "large";
+                    }
                     break;
                 case 2:
                     element = create("hr");
@@ -91,7 +101,7 @@ window.addEventListener("load",()=>{
                     element.textContent = "プレイ"
                     element.addEventListener("click",()=>{
                         if (obj.href === "none"){
-                            alert("現在開発中")
+                            alert("現在使用できません");
                         } else{
                             location.href = obj.href;
                         }
