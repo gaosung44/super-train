@@ -47,14 +47,14 @@
             const msg = document.getElementById("message");
             const img = document.getElementById("result");
             const item = ["大吉","中吉","小吉","吉","末吉","凶","大凶",];
-            img.src = "/image/omikuji/none.png";
+            img.src = "../image/omikuji/none.png";
             let count = 0;
             function play(){
                 const R = Math.floor(Math.random()*item.length);
                 img.style.visibility = "visible";
                 if (count < 10){
                     msg.textContent = item[R];
-                    img.src = `/image/omikuji/${R+1}.png`;
+                    img.src = `../image/omikuji/${R+1}.png`;
                     count++;
                 } else {
                     alert("もう引けません");
