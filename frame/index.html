@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="icon" href="image/super_train.png" type="image/png">
+        <link rel="stylesheet" href="style.css">
+        <title>ホーム</title>
+    </head>
+    <body>
+        <header>
+            <h1>Takamatsu</h1>
+            <button id="home" onclick="switchTub('home');">ホーム</button>
+            <button id="menu" onclick="switchTub('menu');">メニュー</button>
+        </header>
+        <section id="home-section">
+            <h1>ホーム</h1>
+            <hr>
+            <div class="box">
+                <h2>このサイトについて</h2>
+                <div class="mini-box">
+                    いろいろなゲームやツールが遊べる
+                    個人のポートフォリオサイトです。<br>
+                    高松市関係のサイトではありません。
+                </div>
+            </div>
+            <div class="box">
+                <h2>自己紹介</h2>
+                <div class="mini-box">
+                    我は右腕に黒炎を<ruby>纏<rt>まと</rt></ruby>えし
+                    ダークドラゴンを封印した
+                    <ruby>漆黒の翼<rt>ブラックヒーロー</rt></ruby>だ。<br>
+                    この世界は<ruby>闇の魔王<rt>デビルキング</rt></ruby>
+                    の因果律の導きにより終焉する。<br>
+                    そして天は鳴き台地は震える。聖なる昏睡契約を受け入れ
+                    アセンションの時、俺の呪文を聞け。お前やりますねスギ。
+                    <br><br><span style="color: #999;">
+                        ※この物語はフィクションです。
+                    </span>
+                </div>
+            </div>
+            <img src="image/super_train.png" alt="電車の画像" id="train">
+        </section>
+        <section id="menu-section">
+            <h1>メニュー</h1>
+            <hr>
+            <div id="parent"></div>
+        </section>
+        <footer>
+            <span>&copy; 2026 gaosung44</span>
+            <span id="ruleOpen">利用規約</span>
+            <dialog id="rulePopup">
+                <p>当サイトの利用について</p>
+                <p>・フリー素材について</p>
+                <span>
+                    サイト内で使用しているイラストなどのフリー素材は、
+                    配布元様（いらすとや等）が著作権を所有しています。
+                    これらを当サイトから保存して他で再利用する場合は、
+                    必ず各素材サイトの利用規約に従ってください。
+                    当サイト側での責任は負いかねます。
+                </span>
+                <p>・免責事項</p>
+                <span>
+                    当サイトは管理人の個人的な見解や好みを掲載しています。
+                    内容によって生じたトラブルや、閲覧されて不快に感じられた場合
+                    におきましても、一切の責任を負いかねます。
+                    ご利用はすべて自己責任でお願いいたします。
+                </span>
+                <button id="ruleClose">閉じる</button>
+            </dialog>
+            <p>※このサイトは、香川県高松市および関連自治体・団体等とは一切関係ありません。</p>
+            <p style="margin: 0;">製作者　髙松(漆黒の翼)</p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>

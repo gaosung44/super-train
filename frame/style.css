@@ -1,0 +1,141 @@
+:root{
+    --bg-color: #fff9ed;
+    --border-color: #000;
+    --text-color: #000;
+    --footer-color: #ddd;
+}
+@media (prefers-color-scheme: dark){
+    :root{
+        --bg-color: #222;
+        --border-color: #ddd;
+        --text-color: #ddd;
+        --footer-color: #111;
+    }
+}
+body{
+    background-color: var(--bg-color);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+h1,h2,p,span{
+    color: var(--text-color);
+}
+header{
+    background-color: #aff;
+    padding: 0px;
+}
+header h1{
+    font-family: "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
+    color: #000;
+    margin: 0;
+}
+header button{
+    background-color: #aff;
+    font-size: medium;
+    border: 0px;
+    padding: 0 10px;
+    border-radius: 10px;
+    text-decoration: underline;
+    margin: 0 10px;
+}
+header button:hover{
+    background-color: #5ff;
+    text-decoration-color: red;
+    color: red;
+    cursor: pointer;
+}
+footer{
+    background-color: var(--footer-color);
+    text-align: left;
+    margin: 300px 0px 0px 0px;
+    padding: 20px 50px;
+}
+footer span{
+    margin-right: 70px;
+}
+footer p{
+    margin: 0;
+}
+footer #ruleOpen{
+    text-decoration: underline;
+}
+dialog{
+    background-color: var(--bg-color);
+    border: 0px;
+    width: 50vw;
+    min-width: 200px;
+    height: 80vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border-radius: 20px;
+}
+dialog::backdrop{
+    background-color: rgba(0, 0, 0, 0.3); /* 暗めの背景 */
+    backdrop-filter: blur(2px);
+}
+dialog button {
+    display: block;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    background: #007bff;
+    color: white;
+}
+.box{
+    border: 2px solid var(--border-color);
+    color: var(--text-color);
+    border-radius: 20px;
+    margin: 10px auto;
+    width: 60vw;
+    min-width: 250px;
+}
+#parent{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 90px auto 0px;
+}
+.mini-box{
+    width: 40vw;
+    min-width: 200px;
+    margin: 20px auto;
+}
+.child{
+    text-align: left;
+    border: 2px solid var(--border-color);
+    border-radius: 20px;
+    width: 450px;
+    min-height: 300px;
+    margin: 20px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.3);
+    container-type: inline-size;
+}
+.child img{
+    height: 100px;
+    border-radius: 20px;
+    margin: 10px 20px 0px;
+}
+.child .side{
+    display: inline;
+    padding: 0 20px;
+    font-size:x-large;
+    font-size: 7cqw;
+}
+.child .bottom{
+    font-size: large;
+    margin: 20px;
+    color: var(--text-color);
+}
+.child button{
+    display: block;
+    padding: 20px 40px;
+    background-color: #fff;
+    margin: 40px auto;
+    border-radius: 20px;
+    transition: background-color 0.5s;
+}
+.child button:hover{
+    background-color: #0f0;
+    cursor: pointer;
+}
