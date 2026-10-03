@@ -1,0 +1,17 @@
+img{
+    height: 300px;
+    margin: 0;
+    visibility: hidden;
+}
+#start{
+    display: block;
+    margin: 10px auto;
+    padding: 20px 40px;
+    background-color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+#start:hover{
+    background-color: #ff0;
+}
