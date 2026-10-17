@@ -1,0 +1,89 @@
+button{
+    padding: 15px 20px;
+    border: 0px;
+    border-radius: 5px;
+}
+.container{
+    display: block;
+    margin: 10px auto;
+    border-radius: 20px;
+    width: 80vw;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+.container h2{
+    margin-top: 20px;
+}
+input[type="text"]{
+    padding: 15px 20px;
+    border-radius: 20px;
+    outline: none;
+}
+input[type="text"]:focus{
+    border-color: #49e;
+}
+@media (max-width: 400px) {
+    #add-btn{
+        display: block;
+        margin: 0 auto;
+    }
+}
+#add-btn{
+    background-color: #49e;
+    color: #fff;
+}
+#add-btn:hover{
+    background-color: #37b;
+}
+#list{
+    display: block;
+    margin: 10px auto;
+    border-radius: 20px;
+    width: 50vw;
+}
+#list p{
+    margin: 30px 0px 0px;
+}
+#list button{
+    padding: 10px 20px;
+    background-color: #e43;
+    color: #fff;
+    margin-left: 20px;
+}
+#list span {
+    font-size: large;
+}
+#list button:hover{
+    background-color: #c32;
+}
+#comp-btn{
+    display: block;
+    margin: 30px auto;
+    background-color: #7f6;
+}
+#comp-btn:hover{
+    background-color: #5d4;
+}
+#ran-btn,#kee-btn{
+    background-color: #7f6;
+}
+#ran-btn:hover,#kee-btn:hover{
+    background-color: #5d4;
+}
+#show-list{
+    display: block;
+    background-color: aquamarine;
+    padding: 10px auto;
+    margin-bottom: 30px;
+}
+#num-list{
+    background-color: aquamarine;
+}
+#num-list div{
+    display: inline-block;
+    background-color: #49e;
+    padding: 10px;
+}
+#num-list #setting{
+    background-color: #ccc;
+    margin-left: 10vw;
+}
