@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>テスト画面</title>
+    </head>
+    <body>
+        <button id="btn">入力</button>
+        <script>
+            document.getElementById("btn").addEventListener("click",()=>{
+                const result = prompt("入力");
+                location.href = result + ".html";
+            });
+        </script>
+    </body>
+</html>
