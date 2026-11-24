@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="icon" href="../image/super_train.png" type="image/png">
+        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="kanji.css">
+        <title>感じ</title>
+    </head>
+    <body>
+        <header>
+            <h1>test site</h1>
+            <button id="home">ホーム</button>
+        </header>
+        <h1>漢字練習</h1>
+        <section id="input">
+            <div class="container">
+                <h2>問題追加</h2>
+                <input type="text" id="input1" placeholder="問題を入力...">
+                <input type="text" id="input2" placeholder="正解を入力...">
+                <button id="add-btn">追加</button>
+                <div id="list"></div>
+                <button id="comp-btn">次へ</button>
+            </div>
+        </section>
+        <section id="menu">
+            <div class="container">
+                <h2>メニュー</h2>
+                <button id="ran-btn" onclick="state('output','ran');">ランダム出題</button>
+                <button id="kee-btn" onclick="state('output','kee');">追加順出題</button>
+                <button id="back-btn"onclick="state('input');">入力へ戻る</button>
+                <p style="margin: 50px 0px 10px 0px">出題問題</p>
+                <div id="show-list">text</div>
+            </div>
+        </section>
+        <section id="output">
+            <div class="container">
+                <h2>問題</h2>
+                <div class="flex" style="border-top: 2px solid #000;">
+                    <canvas id="area1"></canvas>
+                    <div id="area2">
+                        <canvas id="write-canvas"></canvas>
+                        <div id="btn-area">
+                            <button>消す</button>
+                            <button>決定</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="result">
+            <div class="container">
+                <h2>結果</h2>
+            </div>
+        </section>
+        <script src="footer.js"></script>
+        <script src="kanji.js"></script>
+        <script src="kanji_canvas.js"></script>
+    </body>
+</html>

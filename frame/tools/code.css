@@ -1,0 +1,42 @@
+h1{
+    margin-bottom: 50px;
+}
+button{
+    margin: 0 auto;
+    border-radius: 15px;
+    padding: 10px 20px;
+    background-color: #fff;
+    transition: background-color 0.5s;
+}
+#how:hover,#encode:hover,#decode:hover{
+    background-color: #ff0;
+}
+#copy:hover{
+    background-color: #0f0;
+}
+#delete:hover{
+    background-color: #f55;
+}
+textarea{
+    display: block;
+    margin: 20px auto;
+    width: 300px;
+    height: 120px;
+    font-size: large;
+}
+input{
+    margin: 0 0 0 20px;
+}
+#how{
+    display: block;
+    margin: 0 auto 30px;
+    padding: 10px 40px;
+}
+#button{
+    display: block;
+    margin: 10px auto;
+}
+#format{
+    display: block;
+    margin: 10px;
+}
