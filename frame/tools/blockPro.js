@@ -152,7 +152,7 @@ class BlockManager{
         this.allScore = 0;
         this.addScore = 10;
         this.clearScore = null;
-        this.stageLevel = 1;
+        this.stageLevel = 5;
         this.topBar = {
             color: "#aff",
             h: 50,
